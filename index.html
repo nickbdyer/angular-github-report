@@ -22,16 +22,17 @@
         <li>
           <img style="width:100px" ng-src="{{user.avatar_url}}">
           <a ng-href="{{user.url}}?access_token=5d6ffa56fba974adfd2dc6b86157d542c67256c0">{{user.login}}</a>
-          {{userRepoResult.length}}
           <button class="btn btn-default" ng-click="showUser(user.login);">Show Details</button>
         </li>
       </ul>
-
-      <ul class="list-group" ng-repeat="repo in userRepoResult">
-        <li>
-          <a ng-href="{{user.url}}?access_token=5d6ffa56fba974adfd2dc6b86157d542c67256c0"></a>
-        </li>
-      </ul>
+      <repoinfo style="position:absolute; top:10px; left:400px">
+        User: {{ userRepoResult[0].owner.login }}
+        <p></p>
+        Number of Repos: {{ userRepoResult.length }}
+        <p></p>
+        Most Recent Repo: {{ userRepoResult[0].name }}
+      </repoinfo>
+    
 
     </div>
   </body>
