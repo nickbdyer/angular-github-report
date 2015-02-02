@@ -1,5 +1,7 @@
 #Angular Github Reporter
 
+[![Code Climate](https://codeclimate.com/github/nickbdyer/angular-github-report/badges/gpa.svg)](https://codeclimate.com/github/nickbdyer/angular-github-report)
+
 Week 6 at Makers Academy
 
 ###The Brief
